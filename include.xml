@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="github"
+          fetch=".."
+          revision="lineage-24.0"
+          review="review.lineageos.org" />
+
+  <remote name="custom"
+          fetch="https://github.com/rwiceAOSP"
+          revision="hibana" />
+
+  <!-- AOSP -->
+  <remove-project name="platform/bootable/recovery" />
+  <remove-project name="platform/build" />
+  <remove-project name="platform/build/release" />
+  <remove-project name="platform/build/soong" />
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/system/sepolicy" />
+  <remove-project name="platform/system/update_engine" />
+
+  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="custom" />
+  <project path="build/make" name="platform_build" groups="pdk,sysui-studio" remote="custom" >
+   <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+   <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+   <linkfile src="core" dest="build/core" />
+   <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+   <linkfile src="target" dest="build/target" />
+   <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/release" name="platform_build_release" groups="pdk,tradefed,sysui-studio" remote="custom" />
+  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed,sysui-studio" remote="custom" >
+   <linkfile src="root.bp" dest="Android.bp" />
+   <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="custom" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="custom" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="custom" />
+  <project path="system/update_engine" name="platform_system_update_engine" groups="pdk" remote="custom" />
+
+  <!-- Custom additions -->
+  <project path="external/json-c" name="platform_external_json-c" groups="qcom,qssi" remote="custom" />
+  <project path="packages/apps/ColumbusService" name="platform_packages_apps_ColumbusService" remote="custom" />
+  <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="custom" />
+  <project path="vendor/custom-preference" name="platform_vendor_custom-preference" remote="custom" />
+  <project path="vendor/custom" name="platform_vendor_custom" remote="custom" />
+  <project path="vendor/gms" name="platform_vendor_gms" remote="custom" />
+
+  <project path="device/google/pantah" name="device_google_pantah" remote="custom" />
+  <project path="device/google/pantah-kernels/6.1" name="device_google_pantah-kernels_6.1" remote="custom" />
+  <project path="device/google/gs201" name="device_google_gs201" remote="custom" />
+  <project path="hardware/google/pixel" name="platform_hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="custom" />
+  <project path="hardware/google/pixel-sepolicy" name="platform_hardware_google_pixel-sepolicy" groups="generic_fs,pixel,pdk-desktop" remote="custom" />
+  <project path="vendor/google/cheetah" name="vendor_google_cheetah" remote="custom" />
+  <project path="vendor/google/panther" name="vendor_google_panther" remote="custom" />
+
+  <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" clone-depth="1" remote="github" />
+  <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="github" />
+  <project path="lineage/scripts" name="LineageOS/scripts" groups="tools" revision="main" remote="github" />
+</manifest>
