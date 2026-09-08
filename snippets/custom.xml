@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <project path="art" name="platform_art" groups="pdk" remote="crescence" />
+  <project path="bionic" name="platform_bionic" groups="pdk" remote="crescence" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="crescence" />
   <project path="build/make" name="platform_build" groups="pdk,sysui-studio" remote="crescence" >
    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -13,12 +15,38 @@
    <linkfile src="root.bp" dest="Android.bp" />
    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <project path="development" name="platform_development" groups="developers,pdk-cw-fs,pdk-fs,sysui-studio" remote="crescence" />
+  <project path="external/exfatprogs" name="platform_external_exfatprogs" groups="pdk" remote="crescence" />
+  <project path="external/freetype" name="platform_external_freetype" groups="pdk" remote="crescence" />
+  <project path="external/libcupsfilters" name="platform_external_libcupsfilters" groups="pdk" remote="crescence" />
+  <project path="external/libhevc" name="platform_external_libhevc" groups="pdk" remote="crescence" />
+  <project path="external/libjxl" name="platform_external_libjxl" groups="pdk" remote="crescence" />
+  <project path="external/libpng" name="platform_external_libpng" groups="pdk" remote="crescence" />
+  <project path="external/libppd" name="platform_external_libppd" groups="pdk" remote="crescence" />
+  <project path="external/wpa_supplicant_8" name="platform_external_wpa_supplicant_8" groups="pdk" remote="crescence" />
+  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk,sysui-studio" remote="crescence" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="crescence" />
   <project path="hardware/google/pixel" name="platform_hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="crescence" />
   <project path="hardware/google/pixel-sepolicy" name="platform_hardware_google_pixel-sepolicy" groups="generic_fs,pixel,pdk-desktop" remote="crescence" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk,sysui-studio" remote="crescence" />
+  <project path="hardware/nxp/secure_element" name="platform_hardware_nxp_secure_element" groups="pdk" remote="crescence" />
+  <project path="hardware/st/nfc" name="platform_hardware_st_nfc" groups="pdk" remote="crescence" />
   <project path="packages/apps/ColumbusService" name="platform_packages_apps_ColumbusService" remote="crescence" />
+  <project path="packages/apps/ContactsPicker" name="platform_packages_apps_ContactsPicker" groups="pdk-fs" remote="crescence" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="crescence" />
+  <project path="packages/apps/TV" name="platform_packages_apps_TV" groups="pdk" remote="crescence" />
   <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="crescence" />
+  <project path="packages/modules/adb" name="platform_packages_modules_adb" groups="pdk" remote="crescence" />
+  <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" groups="pdk" remote="crescence" />
+  <project path="packages/modules/Nfc" name="platform_packages_modules_Nfc" groups="pdk-cw-fs,pdk-fs" remote="crescence" />
+  <project path="packages/modules/Uwb" name="platform_packages_modules_Uwb" groups="pdk-cw-fs,pdk-fs" remote="crescence" />
+  <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="crescence" />
+  <project path="packages/providers/ContactsProvider" name="platform_packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="crescence" />
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="crescence" />
+  <project path="packages/providers/TelephonyProvider" name="platform_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="crescence" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="crescence" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="crescence" />
+  <project path="system/core" name="platform_system_core" groups="pdk" remote="crescence" />
   <project path="system/update_engine" name="platform_system_update_engine" groups="pdk" remote="crescence" />
   <project path="vendor/lineage" name="platform_vendor_lineage" remote="crescence" />
   <project path="vendor/custom" name="platform_vendor_custom" remote="crescence" />
