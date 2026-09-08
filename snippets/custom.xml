@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <project path="art" name="PixelOS-AOSP/android_art" groups="pdk" remote="github" />
+  <project path="bionic" name="rwiceAOSP/platform_bionic" groups="pdk" remote="github" />
   <project path="bootable/recovery" name="rwiceAOSP/platform_bootable_recovery" groups="pdk" remote="github" />
   <project path="build/make" name="rwiceAOSP/platform_build" groups="pdk,sysui-studio" remote="github" >
    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -13,12 +15,38 @@
    <linkfile src="root.bp" dest="Android.bp" />
    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <project path="development" name="rwiceAOSP/platform_development" groups="developers,pdk-cw-fs,pdk-fs,sysui-studio" remote="github" />
+  <project path="external/exfatprogs" name="PixelOS-AOSP/android_external_exfatprogs" groups="pdk" remote="github" />
+  <project path="external/freetype" name="PixelOS-AOSP/android_external_freetype" groups="pdk" remote="github" />
+  <project path="external/libcupsfilters" name="PixelOS-AOSP/android_external_libcupsfilters" groups="pdk" remote="github" />
+  <project path="external/libhevc" name="PixelOS-AOSP/android_external_libhevc" groups="pdk" remote="github" />
+  <project path="external/libjxl" name="rwiceAOSP/platform_external_libjxl" groups="pdk" remote="github" />
+  <project path="external/libpng" name="PixelOS-AOSP/android_external_libpng" groups="pdk" remote="github" />
+  <project path="external/libppd" name="PixelOS-AOSP/android_external_libppd" groups="pdk" remote="github" />
+  <project path="external/wpa_supplicant_8" name="PixelOS-AOSP/android_external_wpa_supplicant_8" groups="pdk" remote="github" />
+  <project path="frameworks/av" name="rwiceAOSP/platform_frameworks_av" groups="pdk,sysui-studio" remote="github" />
   <project path="frameworks/base" name="rwiceAOSP/platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="github" />
   <project path="hardware/google/pixel" name="rwiceAOSP/platform_hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="github" />
   <project path="hardware/google/pixel-sepolicy" name="rwiceAOSP/platform_hardware_google_pixel-sepolicy" groups="generic_fs,pixel,pdk-desktop" remote="github" />
+  <project path="hardware/interfaces" name="rwiceAOSP/platform_hardware_interfaces" groups="pdk,sysui-studio" remote="github" />
+  <project path="hardware/nxp/secure_element" name="PixelOS-AOSP/android_hardware_nxp_secure_element" groups="pdk" remote="github" />
+  <project path="hardware/st/nfc" name="PixelOS-AOSP/android_hardware_st_nfc" groups="pdk" remote="github" />
   <project path="packages/apps/ColumbusService" name="rwiceAOSP/platform_packages_apps_ColumbusService" remote="github" />
+  <project path="packages/apps/ContactsPicker" name="PixelOS-AOSP/android_packages_apps_ContactsPicker" groups="pdk-fs" remote="github" />
   <project path="packages/apps/Settings" name="rwiceAOSP/platform_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="github" />
+  <project path="packages/apps/TV" name="PixelOS-AOSP/android_packages_apps_TV" groups="pdk" remote="github" />
   <project path="packages/apps/Updater" name="rwiceAOSP/platform_packages_apps_Updater" remote="github" />
+  <project path="packages/modules/Bluetooth" name="rwiceAOSP/platform_packages_modules_Bluetooth" groups="pdk" remote="github" />
+  <project path="packages/modules/Nfc" name="PixelOS-AOSP/android_packages_modules_Nfc" groups="pdk-cw-fs,pdk-fs" remote="github" />
+  <project path="packages/modules/Uwb" name="PixelOS-AOSP/android_packages_modules_Uwb" groups="pdk-cw-fs,pdk-fs" remote="github" />
+  <project path="packages/modules/Wifi" name="rwiceAOSP/platform_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="github" />
+  <project path="packages/modules/adb" name="rwiceAOSP/platform_packages_modules_adb" groups="pdk" remote="github" />
+  <project path="packages/providers/ContactsProvider" name="PixelOS-AOSP/android_packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="github" />
+  <project path="packages/providers/MediaProvider" name="PixelOS-AOSP/android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="github" />
+  <project path="packages/providers/TelephonyProvider" name="PixelOS-AOSP/android_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="github" />
+  <project path="packages/services/Telecomm" name="rwiceAOSP/platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="github" />
+  <project path="packages/services/Telephony" name="rwiceAOSP/platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="github" />
+  <project path="system/core" name="rwiceAOSP/platform_system_core" groups="pdk" remote="github" />
   <project path="system/update_engine" name="rwiceAOSP/platform_system_update_engine" groups="pdk" remote="github" />
   <project path="vendor/lineage" name="rwiceAOSP/platform_vendor_lineage" remote="github" />
   <project path="vendor/custom" name="rwiceAOSP/platform_vendor_custom" remote="github" />
