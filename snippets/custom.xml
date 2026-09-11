@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="crescence" />
+  <project path="build/make" name="platform_build" groups="pdk,sysui-studio" remote="crescence" >
+   <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+   <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+   <linkfile src="core" dest="build/core" />
+   <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+   <linkfile src="target" dest="build/target" />
+   <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed,sysui-studio" remote="crescence" >
+   <linkfile src="root.bp" dest="Android.bp" />
+   <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="crescence" />
+  <project path="hardware/google/pixel" name="platform_hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="crescence" />
+  <project path="hardware/google/pixel-sepolicy" name="platform_hardware_google_pixel-sepolicy" groups="generic_fs,pixel,pdk-desktop" remote="crescence" />
+  <project path="packages/apps/ColumbusService" name="platform_packages_apps_ColumbusService" remote="crescence" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="crescence" />
+  <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="crescence" />
+  <project path="system/update_engine" name="platform_system_update_engine" groups="pdk" remote="crescence" />
+  <project path="vendor/lineage" name="platform_vendor_lineage" remote="crescence" />
+  <project path="vendor/custom" name="platform_vendor_custom" remote="crescence" />
+  <project path="vendor/custom-preference" name="platform_vendor_custom-preference" remote="crescence" />
+  <project path="vendor/gms" name="platform_vendor_gms" remote="crescence" />
+</manifest>
