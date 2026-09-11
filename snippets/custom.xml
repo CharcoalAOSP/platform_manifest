@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="bootable/recovery" name="rwiceAOSP/platform_bootable_recovery" groups="pdk" remote="github" />
+  <project path="build/make" name="rwiceAOSP/platform_build" groups="pdk,sysui-studio" remote="github" >
+   <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+   <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+   <linkfile src="core" dest="build/core" />
+   <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+   <linkfile src="target" dest="build/target" />
+   <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="rwiceAOSP/platform_build_soong" groups="pdk,tradefed,sysui-studio" remote="github" >
+   <linkfile src="root.bp" dest="Android.bp" />
+   <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="frameworks/base" name="rwiceAOSP/platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="github" />
+  <project path="hardware/google/pixel" name="rwiceAOSP/platform_hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="github" />
+  <project path="hardware/google/pixel-sepolicy" name="rwiceAOSP/platform_hardware_google_pixel-sepolicy" groups="generic_fs,pixel,pdk-desktop" remote="github" />
+  <project path="packages/apps/ColumbusService" name="rwiceAOSP/platform_packages_apps_ColumbusService" remote="github" />
+  <project path="packages/apps/Settings" name="rwiceAOSP/platform_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="github" />
+  <project path="packages/apps/Updater" name="rwiceAOSP/platform_packages_apps_Updater" remote="github" />
+  <project path="system/update_engine" name="rwiceAOSP/platform_system_update_engine" groups="pdk" remote="github" />
+  <project path="vendor/lineage" name="rwiceAOSP/platform_vendor_lineage" remote="github" />
+  <project path="vendor/custom" name="rwiceAOSP/platform_vendor_custom" remote="github" />
+  <project path="vendor/custom-preference" name="rwiceAOSP/platform_vendor_custom-preference" remote="github" />
+  <project path="vendor/gms" name="rwiceAOSP/platform_vendor_gms" remote="github" />
+</manifest>
