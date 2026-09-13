@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project path="art" name="platform_art" groups="pdk" remote="crescence" />
-  <project path="bionic" name="platform_bionic" groups="pdk" remote="crescence" />
-  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="crescence" />
-  <project path="build/make" name="platform_build" groups="pdk,sysui-studio" remote="crescence" >
+  <project path="art" name="Crescence-AOSP/platform_art" groups="pdk" remote="github" />
+  <project path="bionic" name="Crescence-AOSP/platform_bionic" groups="pdk" remote="github" />
+  <project path="bootable/recovery" name="Crescence-AOSP/platform_bootable_recovery" groups="pdk" remote="github" />
+  <project path="build/make" name="Crescence-AOSP/platform_build" groups="pdk,sysui-studio" remote="github" >
    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
    <linkfile src="core" dest="build/core" />
@@ -11,45 +11,45 @@
    <linkfile src="target" dest="build/target" />
    <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed,sysui-studio" remote="crescence" >
+  <project path="build/soong" name="Crescence-AOSP/platform_build_soong" groups="pdk,tradefed,sysui-studio" remote="github" >
    <linkfile src="root.bp" dest="Android.bp" />
    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="development" name="platform_development" groups="developers,pdk-cw-fs,pdk-fs,sysui-studio" remote="crescence" />
-  <project path="external/exfatprogs" name="platform_external_exfatprogs" groups="pdk" remote="crescence" />
-  <project path="external/freetype" name="platform_external_freetype" groups="pdk" remote="crescence" />
-  <project path="external/libcupsfilters" name="platform_external_libcupsfilters" groups="pdk" remote="crescence" />
-  <project path="external/libhevc" name="platform_external_libhevc" groups="pdk" remote="crescence" />
-  <project path="external/libjxl" name="platform_external_libjxl" groups="pdk" remote="crescence" />
-  <project path="external/libpng" name="platform_external_libpng" groups="pdk" remote="crescence" />
-  <project path="external/libppd" name="platform_external_libppd" groups="pdk" remote="crescence" />
-  <project path="external/wpa_supplicant_8" name="platform_external_wpa_supplicant_8" groups="pdk" remote="crescence" />
-  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk,sysui-studio" remote="crescence" />
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="crescence" />
-  <project path="hardware/google/pixel" name="platform_hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="crescence" />
-  <project path="hardware/google/pixel-sepolicy" name="platform_hardware_google_pixel-sepolicy" groups="generic_fs,pixel,pdk-desktop" remote="crescence" />
-  <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk,sysui-studio" remote="crescence" />
-  <project path="hardware/nxp/secure_element" name="platform_hardware_nxp_secure_element" groups="pdk" remote="crescence" />
-  <project path="hardware/st/nfc" name="platform_hardware_st_nfc" groups="pdk" remote="crescence" />
-  <project path="packages/apps/ColumbusService" name="platform_packages_apps_ColumbusService" remote="crescence" />
-  <project path="packages/apps/ContactsPicker" name="platform_packages_apps_ContactsPicker" groups="pdk-fs" remote="crescence" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="crescence" />
-  <project path="packages/apps/TV" name="platform_packages_apps_TV" groups="pdk" remote="crescence" />
-  <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="crescence" />
-  <project path="packages/modules/adb" name="platform_packages_modules_adb" groups="pdk" remote="crescence" />
-  <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" groups="pdk" remote="crescence" />
-  <project path="packages/modules/Nfc" name="platform_packages_modules_Nfc" groups="pdk-cw-fs,pdk-fs" remote="crescence" />
-  <project path="packages/modules/Uwb" name="platform_packages_modules_Uwb" groups="pdk-cw-fs,pdk-fs" remote="crescence" />
-  <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="crescence" />
-  <project path="packages/providers/ContactsProvider" name="platform_packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="crescence" />
-  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="crescence" />
-  <project path="packages/providers/TelephonyProvider" name="platform_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="crescence" />
-  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="crescence" />
-  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="crescence" />
-  <project path="system/core" name="platform_system_core" groups="pdk" remote="crescence" />
-  <project path="system/update_engine" name="platform_system_update_engine" groups="pdk" remote="crescence" />
-  <project path="vendor/lineage" name="platform_vendor_lineage" remote="crescence" />
-  <project path="vendor/custom" name="platform_vendor_custom" remote="crescence" />
-  <project path="vendor/custom-preference" name="platform_vendor_custom-preference" remote="crescence" />
-  <project path="vendor/gms" name="platform_vendor_gms" remote="crescence" />
+  <project path="development" name="Crescence-AOSP/platform_development" groups="developers,pdk-cw-fs,pdk-fs,sysui-studio" remote="github" />
+  <project path="external/exfatprogs" name="Crescence-AOSP/platform_external_exfatprogs" groups="pdk" remote="github" />
+  <project path="external/freetype" name="Crescence-AOSP/platform_external_freetype" groups="pdk" remote="github" />
+  <project path="external/libcupsfilters" name="Crescence-AOSP/platform_external_libcupsfilters" groups="pdk" remote="github" />
+  <project path="external/libhevc" name="Crescence-AOSP/platform_external_libhevc" groups="pdk" remote="github" />
+  <project path="external/libjxl" name="Crescence-AOSP/platform_external_libjxl" groups="pdk" remote="github" />
+  <project path="external/libpng" name="Crescence-AOSP/platform_external_libpng" groups="pdk" remote="github" />
+  <project path="external/libppd" name="Crescence-AOSP/platform_external_libppd" groups="pdk" remote="github" />
+  <project path="external/wpa_supplicant_8" name="Crescence-AOSP/platform_external_wpa_supplicant_8" groups="pdk" remote="github" />
+  <project path="frameworks/av" name="Crescence-AOSP/platform_frameworks_av" groups="pdk,sysui-studio" remote="github" />
+  <project path="frameworks/base" name="Crescence-AOSP/platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="github" />
+  <project path="hardware/google/pixel" name="Crescence-AOSP/platform_hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="github" />
+  <project path="hardware/google/pixel-sepolicy" name="Crescence-AOSP/platform_hardware_google_pixel-sepolicy" groups="generic_fs,pixel,pdk-desktop" remote="github" />
+  <project path="hardware/interfaces" name="Crescence-AOSP/platform_hardware_interfaces" groups="pdk,sysui-studio" remote="github" />
+  <project path="hardware/nxp/secure_element" name="Crescence-AOSP/platform_hardware_nxp_secure_element" groups="pdk" remote="github" />
+  <project path="hardware/st/nfc" name="Crescence-AOSP/platform_hardware_st_nfc" groups="pdk" remote="github" />
+  <project path="packages/apps/ColumbusService" name="Crescence-AOSP/platform_packages_apps_ColumbusService" remote="github" />
+  <project path="packages/apps/ContactsPicker" name="Crescence-AOSP/platform_packages_apps_ContactsPicker" groups="pdk-fs" remote="github" />
+  <project path="packages/apps/Settings" name="Crescence-AOSP/platform_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="github" />
+  <project path="packages/apps/TV" name="Crescence-AOSP/platform_packages_apps_TV" groups="pdk" remote="github" />
+  <project path="packages/apps/Updater" name="Crescence-AOSP/platform_packages_apps_Updater" remote="github" />
+  <project path="packages/modules/adb" name="Crescence-AOSP/platform_packages_modules_adb" groups="pdk" remote="github" />
+  <project path="packages/modules/Bluetooth" name="Crescence-AOSP/platform_packages_modules_Bluetooth" groups="pdk" remote="github" />
+  <project path="packages/modules/Nfc" name="Crescence-AOSP/platform_packages_modules_Nfc" groups="pdk-cw-fs,pdk-fs" remote="github" />
+  <project path="packages/modules/Uwb" name="Crescence-AOSP/platform_packages_modules_Uwb" groups="pdk-cw-fs,pdk-fs" remote="github" />
+  <project path="packages/modules/Wifi" name="Crescence-AOSP/platform_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="github" />
+  <project path="packages/providers/ContactsProvider" name="Crescence-AOSP/platform_packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="github" />
+  <project path="packages/providers/MediaProvider" name="Crescence-AOSP/platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="github" />
+  <project path="packages/providers/TelephonyProvider" name="Crescence-AOSP/platform_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="github" />
+  <project path="packages/services/Telecomm" name="Crescence-AOSP/platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="github" />
+  <project path="packages/services/Telephony" name="Crescence-AOSP/platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="github" />
+  <project path="system/core" name="Crescence-AOSP/platform_system_core" groups="pdk" remote="github" />
+  <project path="system/update_engine" name="Crescence-AOSP/platform_system_update_engine" groups="pdk" remote="github" />
+  <project path="vendor/lineage" name="Crescence-AOSP/platform_vendor_lineage" remote="github" />
+  <project path="vendor/custom" name="Crescence-AOSP/platform_vendor_custom" remote="github" />
+  <project path="vendor/custom-preference" name="Crescence-AOSP/platform_vendor_custom-preference" remote="github" />
+  <project path="vendor/gms" name="Crescence-AOSP/platform_vendor_gms" remote="github" />
 </manifest>
